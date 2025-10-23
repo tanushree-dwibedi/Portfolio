@@ -25,9 +25,9 @@
             background: white;
             padding: 20px;
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 900px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: left;
         }
         .project-card h3 {
@@ -35,6 +35,7 @@
         }
         .project-card p {
             color: #333;
+            margin-bottom: 5px;
         }
         nav {
             margin: 20px 0;
@@ -51,34 +52,70 @@
         nav a:hover {
             background-color: #005bb5;
         }
+        .section-title {
+            margin-top: 50px;
+            color: #222;
+            font-size: 26px;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>My Projects</h1>
     </header>
-    
+
     <div class="container">
+        
+        <!-- Research Publications Section -->
+        <h2 class="section-title">Research Publications</h2>
+
         <div class="project-card">
-            <h3>Real-Time Monocular Depth Estimation</h3>
-            <p>Developed a deep learning model for depth estimation using datasets like KITTI and NYUv2, deployed on edge AI devices.</p>
+            <h3>Performance Evaluation of Bi-LSTM Optimizers for Stock Market Prediction</h3>
+            <p>Co-authored research demonstrating BiLSTM model effectiveness with a 12% improvement over baseline LSTM models.</p>
+            <p>Engineered BiLSTM on a 5-year historical dataset of 10,000+ socioeconomic & financial records.</p>
+            <p>Benchmarked 6 optimizers (Adam, RMSprop, SGD, etc.); Adam achieved lowest RMSE of 14.46 & R² = 0.93.</p>
+            <p>Designed complete preprocessing & training pipeline with sequence generation & hyperparameter tuning.</p>
         </div>
 
         <div class="project-card">
-            <h3>CNN-LSTM Model for Stock Price Prediction</h3>
-            <p>Built a hybrid model using Conv1D and LSTMs to predict stock prices, leveraging technical indicators and historical data.</p>
+            <h3>Dandelion Optimizer with LSTM for Stock Price Forecasting</h3>
+            <p>Developed a hybrid DO-LSTM model achieving 15% higher accuracy and robustness.</p>
+            <p>Used Dandelion Optimizer for feature selection on 12,000+ stock records to extract key indicators (SMA, EMA, Momentum, Volatility).</p>
+            <p>Achieved MSE = 14.46 & R² = 0.93 using optimized technical indicator selection.</p>
+            <p>Presented research showcasing improved efficiency and stability in financial prediction.</p>
         </div>
 
+
+        <!-- Project Work Section -->
+        <h2 class="section-title">Project Work</h2>
+
         <div class="project-card">
-            <h3>Web-Based Tic-Tac-Toe Game</h3>
-            <p>Designed and developed a responsive Tic-Tac-Toe game using HTML, CSS, and JavaScript.</p>
+            <h3>Semantic Similarity using Word2Vec (Skip-Gram)</h3>
+            <p>Preprocessed 10,000+ tweets via lemmatization & regex-based noise removal.</p>
+            <p>Trained Gensim Skip-Gram Word2Vec model to generate semantic embeddings.</p>
+            <p>Built similarity scoring pipeline to find tweets related to COVID-related keywords.</p>
+            <p>Visualized semantic relationships using vector similarity plots.</p>
         </div>
+
+
+        <!-- Internship Section -->
+        <h2 class="section-title">Internship</h2>
+
+        <div class="project-card">
+            <h3>Data Science Intern — Celebal Technologies</h3>
+            <p>Applied K-Means clustering for behavior-based customer segmentation.</p>
+            <p>Processed 200+ records with encoding & feature scaling; selected clusters via Elbow Method.</p>
+            <p>Visualized insights using PCA & Matplotlib for clear and intuitive stakeholder reporting.</p>
+        </div>
+
     </div>
-    
+
     <nav>
         <a href="index.html">Home</a>
         <a href="AboutMe.html">About Me</a>
         <a href="Certification.html">Certifications</a>
-           </nav>
+    </nav>
+
 </body>
 </html>
